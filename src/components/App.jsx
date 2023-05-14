@@ -1,16 +1,13 @@
+import { Fragment } from "react";
+import { Counter } from "./Counter/Counter";
+import { GlobalStyle } from "./GlobalStyle";
+
+
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
+    <Fragment>
+      <Counter initialValue={10}/>
+      <GlobalStyle />
+    </Fragment>
   );
 };
